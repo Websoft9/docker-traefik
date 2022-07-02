@@ -13,7 +13,7 @@ services:
       - '${APP_DASHBOARD_PORT}:8080'
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      #- $PWD/src/traefik.yml:/etc/traefik/traefik.yml
+      - $PWD/src/traefik.yml:/etc/traefik/traefik.yml
 
 networks:
   default:
